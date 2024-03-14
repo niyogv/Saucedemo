@@ -34,5 +34,8 @@ Here user login with valid cred and buy the product
 # Running the test
 pytest test_buy.py
 
+# CI health pipeline
+Here whenever commit done to this repo to main branch the CI pipeline will trigger and perform health check on the login test
+
 
 
