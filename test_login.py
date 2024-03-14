@@ -26,10 +26,10 @@ class Test_login():
 
     @pytest.fixture()
     def test_invoke(self):
-        # chrome_options = webdriver.ChromeOptions()
-        # chrome_options.add_argument('--headless')
-        # self.driver=webdriver.Chrome(options=chrome_options)
-        self.driver=webdriver.Chrome()
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument('--headless')
+        self.driver=webdriver.Chrome(options=chrome_options)
+        # self.driver=webdriver.Chrome()
         wait=WebDriverWait(self.driver, 60)
         self.driver.get(URL)
         Titlecheck=wait.until(EC.presence_of_element_located((By.XPATH, '//div[@class="login_logo"]')))
