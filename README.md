@@ -18,7 +18,7 @@ Here there are two scenarios
 - Login test
 - Buying test
 
-# Login test scenarios
+# Login test cases
 - Submitting empty form
 - Submitting with only username
 - Submitting with only password
